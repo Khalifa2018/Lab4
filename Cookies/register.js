@@ -1,3 +1,10 @@
+onload = function(){
+  deleteCookie("image");
+  deleteCookie("name");
+  deleteCookie("color");
+  deleteCookie("visitCount");
+}
+
 document.getElementById("btn").onclick = function () {
   var gender = document.getElementsByName("gender");
 
@@ -17,4 +24,10 @@ document.getElementById("btn").onclick = function () {
   var color = document.getElementById("colorOpt").value;
 
   setCookie("color", color);
+
+
+  setCookie("visitCount", 0);
+
+  window.location.href = "./welcome.html";
+
 };
