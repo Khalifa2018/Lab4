@@ -1,9 +1,9 @@
-onload = function(){
+onload = function () {
   deleteCookie("image");
   deleteCookie("name");
   deleteCookie("color");
   deleteCookie("visitCount");
-}
+};
 
 document.getElementById("btn").onclick = function () {
   var gender = document.getElementsByName("gender");
@@ -25,9 +25,7 @@ document.getElementById("btn").onclick = function () {
 
   setCookie("color", color);
 
-
   setCookie("visitCount", 0);
 
-  window.location.href = "./welcome.html";
-
+  window.location.replace("./welcome.html");
 };

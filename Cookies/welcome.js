@@ -1,4 +1,7 @@
 onload = function () {
+
+
+
   var name = getCookie("name");
 
   var color = getCookie("color");
@@ -18,3 +21,4 @@ onload = function () {
 
   imageElement.src = image;
 };
+
